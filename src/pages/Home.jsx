@@ -3,8 +3,7 @@ import Header from "../components/Header";
 import TodoList from "../components/TodoList";
 import { fetchTodos } from "../services/apiClient";
 
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL || "https://jsonplaceholder.typicode.com";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 function Home() {
   const [todos, setTodos] = useState([]);

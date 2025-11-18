@@ -1,5 +1,4 @@
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL || "https://jsonplaceholder.typicode.com";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export async function fetchTodos(limit = 15) {
   const base = API_BASE.replace(/\/$/, "");
